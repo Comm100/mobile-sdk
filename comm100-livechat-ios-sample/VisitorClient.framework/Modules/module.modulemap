@@ -1,0 +1,6 @@
+framework module VisitorClient {
+  umbrella header "VisitorClient.h"
+
+  export *
+  module * { export * }
+}
