@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface VisitorClientController : UIViewController<UIWebViewDelegate>
+@interface VisitorClientController : UIViewController<UIWebViewDelegate>{
+}
 
 -(id) initWithChatUrl:(NSString *)url;
 
