@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Cn8-8O-TjT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cn8-8O-TjT">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -30,47 +31,46 @@
                         <viewControllerLayoutGuide type="bottom" id="A6I-ym-uRb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bTD-RM-AQf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who is Comm100?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1E-Ua-s47">
-                                <rect key="frame" x="212" y="117" width="177" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Who is Comm100?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1E-Ua-s47">
+                                <frame key="frameInset" minX="207" minY="117" width="187" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="177" id="duL-34-9SH"/>
-                                    <constraint firstAttribute="height" constant="21" id="kNg-cg-0OG"/>
+                                    <constraint firstAttribute="width" constant="187" id="WoD-Dh-qIN"/>
+                                    <constraint firstAttribute="height" constant="21" id="fRz-lN-ytO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asz-eH-VOH">
-                                <rect key="frame" x="151" y="146" width="298" height="209"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="298" translatesAutoresizingMaskIntoConstraints="NO" id="Asz-eH-VOH">
+                                <frame key="frameInset" minX="151" minY="146" width="298" height="209"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="298" id="7a6-W3-QvS"/>
-                                    <constraint firstAttribute="height" constant="209" id="8yi-Mn-ilx"/>
+                                    <constraint firstAttribute="width" constant="298" id="DWT-BE-K5V"/>
+                                    <constraint firstAttribute="height" constant="209" id="zTv-m0-meu"/>
                                 </constraints>
                                 <string key="text">Comm100 is the global provider of live chat, email marketing and help desk software. With "100% communication, 100% success" as our motto, we are committed to making customer communication simple and effective for you.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Comm100-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="KGv-mL-dv1">
-                                <rect key="frame" x="195" y="448" width="210" height="42"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Comm100-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="KGv-mL-dv1">
+                                <frame key="frameInset" minX="195" minY="501" width="210" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="5Km-m1-Apk"/>
-                                    <constraint firstAttribute="width" constant="210" id="Kmc-iV-lD6"/>
+                                    <constraint firstAttribute="height" constant="42" id="TeF-2p-SQ9"/>
+                                    <constraint firstAttribute="width" constant="210" id="tit-nG-MLA"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="KGv-mL-dv1" firstAttribute="top" secondItem="Asz-eH-VOH" secondAttribute="bottom" constant="93" id="0Hs-Rr-fL7"/>
-                            <constraint firstAttribute="centerX" secondItem="Asz-eH-VOH" secondAttribute="centerX" id="9r4-Aj-fTQ"/>
-                            <constraint firstAttribute="centerX" secondItem="d1E-Ua-s47" secondAttribute="centerX" id="Iwa-7e-Pig"/>
-                            <constraint firstAttribute="centerX" secondItem="Asz-eH-VOH" secondAttribute="centerX" id="VdA-wO-aeC"/>
-                            <constraint firstItem="d1E-Ua-s47" firstAttribute="top" secondItem="k6h-nU-bA9" secondAttribute="bottom" constant="53" id="ai8-ag-SLG"/>
-                            <constraint firstItem="Asz-eH-VOH" firstAttribute="top" secondItem="d1E-Ua-s47" secondAttribute="bottom" constant="8" symbolic="YES" id="p0w-pH-ugt"/>
-                            <constraint firstAttribute="centerX" secondItem="KGv-mL-dv1" secondAttribute="centerX" id="vM7-jQ-3ri"/>
+                            <constraint firstItem="KGv-mL-dv1" firstAttribute="centerX" secondItem="bTD-RM-AQf" secondAttribute="centerX" id="2i0-Tj-pJ5"/>
+                            <constraint firstItem="d1E-Ua-s47" firstAttribute="centerX" secondItem="bTD-RM-AQf" secondAttribute="centerX" id="4TH-At-naK"/>
+                            <constraint firstItem="Asz-eH-VOH" firstAttribute="top" secondItem="d1E-Ua-s47" secondAttribute="bottom" constant="8" id="BMK-H9-oo0"/>
+                            <constraint firstItem="A6I-ym-uRb" firstAttribute="top" secondItem="KGv-mL-dv1" secondAttribute="bottom" constant="57" id="Wui-nB-BK2"/>
+                            <constraint firstItem="Asz-eH-VOH" firstAttribute="centerX" secondItem="bTD-RM-AQf" secondAttribute="centerX" id="cdw-nC-CVp"/>
+                            <constraint firstItem="d1E-Ua-s47" firstAttribute="top" secondItem="k6h-nU-bA9" secondAttribute="bottom" constant="53" id="dxJ-2M-cX0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XDW-iu-aBz">

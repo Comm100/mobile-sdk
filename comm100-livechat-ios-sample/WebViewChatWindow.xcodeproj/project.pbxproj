@@ -13,8 +13,9 @@
 		9A4BBA081B0471DA003EDAB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BBA061B0471DA003EDAB6 /* Main.storyboard */; };
 		9A4BBA0A1B0471DA003EDAB6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BBA091B0471DA003EDAB6 /* Images.xcassets */; };
 		9A4BBA0D1B0471DA003EDAB6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BBA0B1B0471DA003EDAB6 /* LaunchScreen.xib */; };
+		9A51A4B91DB0886300DEE3C4 /* UINavModalWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A51A4B81DB0886300DEE3C4 /* UINavModalWebView.m */; };
+		9A687D411BC7A4280095BDAF /* VisitorClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A687D401BC7A4280095BDAF /* VisitorClient.framework */; };
 		9AD732151B15A4F700AE703A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD732141B15A4F700AE703A /* HomeViewController.m */; };
-		9AE76A2D1B15BBC700A5D606 /* VisitorClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD732181B15A90700AE703A /* VisitorClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,11 @@
 		9A4BBA071B0471DA003EDAB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A4BBA091B0471DA003EDAB6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A4BBA0C1B0471DA003EDAB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9A51A4B71DB0886300DEE3C4 /* UINavModalWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavModalWebView.h; sourceTree = "<group>"; };
+		9A51A4B81DB0886300DEE3C4 /* UINavModalWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavModalWebView.m; sourceTree = "<group>"; };
+		9A687D401BC7A4280095BDAF /* VisitorClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VisitorClient.framework; sourceTree = "<group>"; };
 		9AD732131B15A4F700AE703A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		9AD732141B15A4F700AE703A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		9AD732181B15A90700AE703A /* VisitorClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VisitorClient.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AE76A2D1B15BBC700A5D606 /* VisitorClient.framework in Frameworks */,
+				9A687D411BC7A4280095BDAF /* VisitorClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +50,7 @@
 		9A4BB9F01B0471DA003EDAB6 = {
 			isa = PBXGroup;
 			children = (
-				9AD732181B15A90700AE703A /* VisitorClient.framework */,
+				9A687D401BC7A4280095BDAF /* VisitorClient.framework */,
 				9A4BB9FB1B0471DA003EDAB6 /* WebViewChatWindow */,
 				9A4BB9FA1B0471DA003EDAB6 /* Products */,
 			);
@@ -69,6 +72,8 @@
 				9A4BBA011B0471DA003EDAB6 /* AppDelegate.m */,
 				9AD732131B15A4F700AE703A /* HomeViewController.h */,
 				9AD732141B15A4F700AE703A /* HomeViewController.m */,
+				9A51A4B71DB0886300DEE3C4 /* UINavModalWebView.h */,
+				9A51A4B81DB0886300DEE3C4 /* UINavModalWebView.m */,
 				9A4BBA061B0471DA003EDAB6 /* Main.storyboard */,
 				9A4BBA091B0471DA003EDAB6 /* Images.xcassets */,
 				9A4BBA0B1B0471DA003EDAB6 /* LaunchScreen.xib */,
@@ -117,7 +122,8 @@
 				TargetAttributes = {
 					9A4BB9F81B0471DA003EDAB6 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 879WNMV2H9;
+						DevelopmentTeam = AUD8M9SUE3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -161,6 +167,7 @@
 				9A4BBA021B0471DA003EDAB6 /* AppDelegate.m in Sources */,
 				9A4BB9FF1B0471DA003EDAB6 /* main.m in Sources */,
 				9AD732151B15A4F700AE703A /* HomeViewController.m in Sources */,
+				9A51A4B91DB0886300DEE3C4 /* UINavModalWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +278,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUD8M9SUE3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -278,9 +287,10 @@
 				INFOPLIST_FILE = WebViewChatWindow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CollegeMobile.VisitorClientDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comm100.livechat.visitorsdktest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -290,6 +300,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUD8M9SUE3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -297,9 +309,10 @@
 				INFOPLIST_FILE = WebViewChatWindow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CollegeMobile.VisitorClientDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comm100.livechat.visitorsdktest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "28ac9cdd-d770-4635-b5f6-b2e0e5467cf1";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
