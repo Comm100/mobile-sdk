@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<string name="app_name">Comm100 VS　Android</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="chat_now">Chat Now!</string>
-    <string name="menu_settings">Settings</string>
-    <string name="title_activity_chat_window">ChatWindowActivity</string>
-	<string name="title_chat_window_with_library">Chat Window with Library</string>
-</resources>
