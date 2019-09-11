@@ -12,6 +12,8 @@
 
     IBOutlet UIBarButtonItem * bbChatNow;
     
+    __weak IBOutlet UISwitch *switchIsAPNS;
+    __weak IBOutlet UITextView *txtServerUrl;
 }
 
 -(IBAction) startChat:(id)sender;

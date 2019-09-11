@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++(NSString *) apnsDeviceId;
++(NSString *) thirdDeviceId;
++(void) setIsUseAPNS:(BOOL)isUseAPNS;
 
 @end
 

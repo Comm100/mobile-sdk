@@ -26,9 +26,18 @@
 
 -(void) dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion{
     if(self.presentedViewController){
-        [super dismissViewControllerAnimated:flag completion:completion];
+        [super dismissViewControllerAnimated:flag completion:^(void){
+            NSLog(@"%@", self.presentedViewController);
+            completion();
+            NSLog(@"%@", self.presentedViewController);
+        }];
     }
 }
+
+-(void) presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion{
+    [super presentViewController:viewControllerToPresent animated:flag completion:completion];
+}
+
 /*
 #pragma mark - Navigation
 

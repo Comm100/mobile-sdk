@@ -10,6 +10,12 @@
 #import "HomeViewController.h"
 #import "UINavModalWebView.h"
 #import <VisitorClient/VisitorClientController.h>
+#import <VisitorClient/Field.h>
+#import <VisitorClient/VisitorClientCore.h>
+#import "WKVisitorClientController.h"
+#import "AppDelegate.h"
+//#import "Field.h"
+//#import "VisitorClientCore.h"
 
 @implementation HomeViewController
 
@@ -20,7 +26,15 @@
 -(IBAction)startChat:(id)sender{
     
     // please replace your own siteId & planId
-    NSString * chatUrl = @"https://chatserver.comm100.com/chatwindow.aspx?siteId=10000&planId=5000239";
+    NSString * chatUrl = txtServerUrl.text;
+    //@"https://int.comm100.com/chatserver/chatWindow.aspx?planId=18&siteId=2000018";
+    
+    BOOL isUseAPNS = switchIsAPNS.on;
+    [AppDelegate setIsUseAPNS:isUseAPNS];
+    NSString * deviceId = isUseAPNS ? AppDelegate.apnsDeviceId : AppDelegate.thirdDeviceId;
+    if (deviceId != nil) {
+        [[VisitorClientCore sharedVisitorClientCore] setRemoteNotificationDeviceId:deviceId isDebug:YES];
+    }
     
     VisitorClientController * visitorClient = [[VisitorClientController alloc] initWithChatUrl:chatUrl];
     
@@ -53,7 +67,15 @@
     visitorClient.navigationItem.title = @"Chat";
     
     [self presentViewController:navController animated:true completion:nil];
-    
+
+}
+
+-(void) presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion{
+    [super presentViewController:viewControllerToPresent animated:flag completion:completion];
+}
+
+-(void) dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {
+    [super dismissViewControllerAnimated:flag completion:completion];
 }
 
 -(void) BACK:(id)sender{
