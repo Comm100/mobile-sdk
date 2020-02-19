@@ -18,6 +18,8 @@
 
 -(id) initWithChatUrl:(NSString *)url;
 
+-(void) fillingCustomVariables:(NSArray *)values;
+
 -(void) fillingPrechat:(NSArray *)fields isSkip:(BOOL)isSkip;
 
 @end
