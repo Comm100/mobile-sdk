@@ -38,13 +38,12 @@
     
     VisitorClientController * visitorClient = [[VisitorClientController alloc] initWithChatUrl:chatUrl];
     
-    
     /* ## Custom Variables ##
     *  For custom variables you should use field name to identify. This is the field name you defined.
     */
     //Field * customVariable1 = [[Field alloc] initWithName:@"myCustomeName" value:@"myCustomValue"];
     //Field * customVariable2 = [[Field alloc] initWithName:@"myCustomeName2" value:@"myCustomValue2"];
-    //Field * customVariable3 = [[Field alloc] initWithName:@"testCustomVariable" value:@"testCustomValue"];
+    //Field * customVariable3 = [[Field alloc] initWithName:@"testCustomVariable" value:@"testCustomValue3"];
     
     // fill custom variables form in chat window.
     //[visitorClient fillingCustomVariables:@[customVariable1, customVariable2, customVariable3]];
@@ -62,6 +61,7 @@
      */
     //Field * name = [[Field alloc] initWithType:@"name" value:@"name-allon2233"];
     //Field * email = [[Field alloc] initWithType:@"email" value:@"email-allon2233@email.com"];
+    
     /* ## Custom Fields ##
      *  For custom fields you should use field label to identify. This is the field name you defined in prechat.
      */
