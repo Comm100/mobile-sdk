@@ -28,7 +28,9 @@
     if(self.presentedViewController){
         [super dismissViewControllerAnimated:flag completion:^(void){
             NSLog(@"%@", self.presentedViewController);
-            completion();
+            if(completion!=nil){
+                completion();
+            }
             NSLog(@"%@", self.presentedViewController);
         }];
     }

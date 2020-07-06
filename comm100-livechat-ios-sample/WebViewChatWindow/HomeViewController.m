@@ -71,7 +71,7 @@
     //[visitorClient fillingPrechat:@[name, email, account] isSkip:YES];
     
     UINavModalWebView * navController = [[UINavModalWebView alloc] initWithRootViewController:visitorClient];
-    
+    navController.modalPresentationStyle = UIModalPresentationFullScreen;
     visitorClient.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(BACK:)];
     
     visitorClient.navigationItem.title = @"Chat";
