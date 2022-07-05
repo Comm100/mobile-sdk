@@ -30,7 +30,7 @@ public class ChatApplication extends Application {
         systemFields.add(new SystemField("name","Frank"));
         systemFields.add(new SystemField("email","comm100@comm100.com"));
         Vector<CustomField> customFields = new Vector<CustomField>();
-        VisitorClientInterface.setChatUrl("https://vue.comm100.com/visitorside/html/chatwindow.300e735de7efe4da16c20ea2575fedab59802d7e.html?siteId=10100000&planId=0bb92c61-8cb3-4330-8558-492dcfec7309");
+        VisitorClientInterface.setChatUrl("https://vue.comm100.com/visitorside/chatwindow.aspx?siteId=10100000&planId=0bb92c61-8cb3-4330-8558-492dcfec7309");
         VisitorClientInterface.fillPreChat(systemFields,customFields,false);
         String jsString = VisitorClientCustomJS.buildPrechatfillingScript(systemFields,customFields,false);
 
